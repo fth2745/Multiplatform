@@ -1,0 +1,327 @@
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    body {
+        background-color: #15202b; /* Twitter mavi tonu */
+        font-family: Arial, sans-serif; /* Twitter fontu */
+        color: #fff; /* Beyaz metin renkleri */
+    }
+ 
+    /* Üst Navigasyon Menüsü */
+    .navigate {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Öğeler arası boşluk */
+        margin-bottom: 20px; /* Alt boşluk */
+        width: 15%;
+        margin-top: 5%;
+        margin-left: 7.5%; 
+        text-align: center;
+        position: fixed;
+        
+    }
+    
+    .yuvarlak{
+        border-radius: 50%;
+        margin-bottom: 10%;
+    }
+
+    #a:hover {
+        cursor: pointer;
+    }
+    #b:hover {
+        cursor: pointer;
+    }
+    .navigate li {
+        padding: 10px 20px; /* Yatay ve dikey boşluklar */
+        background-color: transparent; /* Twitter mavi tonu */
+        border-radius: 20px; /* Yuvarlatılmış köşeler */
+        font-size: 14px; /* Metin boyutu */
+        margin-bottom: 5px;
+        cursor: pointer; /* İmleç türü */
+        transition: background-color 0.3s ease; /* Arka plan rengi animasyonu */
+        border: dashed 0.5px;
+        border-color: gray;
+        
+    }
+    #buton{
+        padding: 10px 20px; /* Yatay ve dikey boşluklar */
+        background-color: #1DA1F2; /* Twitter mavi tonu */
+        border-radius: 20px; /* Yuvarlatılmış köşeler */
+        font-size: 14px; /* Metin boyutu */
+        margin-bottom: 5px;
+        cursor: pointer; /* İmleç türü */
+        transition: background-color 0.3s ease; /* Arka plan rengi animasyonu */
+        border: none;
+        color: white;
+        width: 100%;
+    }
+
+    #buton:hover{
+        background-color: gray; /* Hover rengi */
+
+    }
+    .navigate li:hover {
+        background-color: gray; /* Hover rengi */
+    }
+    /* İçerik Kutuları */
+    .Hepsi {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Aralarda boşluk */
+        gap: 20px; /* Öğeler arası boşluk */
+        width: 40%;
+        margin-top: 0%;
+        margin-left: 30%; 
+    }
+    .Time {
+        width: 100%;
+        margin-top: 0;
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       margin-left: 2%;
+    }
+    #b:hover, #a:hover{
+        background-color: #555555;
+    }
+    #a, #b {
+        flex: 1;
+        padding: 10px; /* Kenar boşlukları */
+        background-color: transparent; /* İçerik kutusu arka plan rengi */
+        border-radius: 10px; /* Yuvarlatılmış köşeler */
+        transition: background-color 0.3s ease;
+    }
+    img.yuvarlak{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+       
+    .container {
+        width: 100%; /* Ekran genişliği */
+        margin: 0 auto; /* Sayfayı ortala */
+        padding: 20px; /* Kenar boşlukları */
+    }
+    
+    .container div{
+        padding: 0;
+        margin: 0;
+        background-color: transparent; /* Liste arka plan rengi */
+        padding: 15px; /* Kenar boşlukları */
+        border-radius: 10px; /* Yuvarlatılmış köşeler */
+        margin-bottom: 10px; /* Alt boşluk */
+        border: #8899a6 0.5px dotted;
+        transition: background-color 0.3s ease;
+        color: #8899a6; /* Metin rengi */
+        
+    }
+    .container div p {
+        margin: 0; /* Paragraf boşlukları sıfırla */
+        color: white; /* Metin rengi */
+        font-size: 13pt;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        
+    }
+
+    #post-profile-pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 0;
+    }
+
+    #ppost-info {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    #pp-name {
+        margin-left: 2%;
+        margin-top: 2%;
+        color: gray;
+    }
+
+    #post-inside {
+        border: none;
+        position: relative;
+        bottom: 70px;
+        gap: 100px;
+        word-wrap: break-word;
+    }
+
+    /* Liste İçindeki Resimler */
+    .container div img {
+        border-radius: 30px; /* Yuvarlatılmış köşeler */
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .container div:hover{
+        background-color: #555555;
+    }
+
+    #profile-button{
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        padding: 10px;
+
+    }
+    #prof{
+        justify-content: center;
+        display: flex;
+    }
+    #buton2{
+        padding: 10px 20px; /* Yatay ve dikey boşluklar */
+        background-color: transparent; /* Twitter mavi tonu */
+        border-radius: 20px; /* Yuvarlatılmış köşeler */
+        font-size: 14px; /* Metin boyutu */
+        margin-bottom: 5px;
+        cursor: pointer; /* İmleç türü */
+        transition: background-color 0.3s,transform 0.5s ease;
+        border-color: gray;
+        color: red;
+        width: 100%;
+
+    }
+    #buton2:hover{
+        border: none;
+        background-color: red; /* Arka plan rengi */
+        color: black;
+        transform: scale(1.1);
+    }
+
+    /**/
+    /* Modal Style */
+/* Modal Style */
+/* Modal stilini düzenle */
+.modal {
+    display: none; /* Modalı varsayılan olarak gizle */
+    position: fixed; /* Ekranın ortasına sabitle */
+    z-index: 1; /* Diğer öğelerin üzerine çık */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ekranın tamamını kapla */
+    height: 100%;
+    overflow: auto; /* Eğer içerik ekran boyutundan büyükse kaydırma çubuğunu ekle */
+    background-color: rgba(0, 0, 0, 0.4); /* Arka planı hafifçe koyulaştır */
+    padding-top: 60px; /* Modalın içeriğini üst kısımdan 60 piksel aşağıya kaydır */
+}
+
+/* Modal içeriğini stilini düzenle */
+.modal-content {
+    background-color: #1DA1F2; /* Modal arka plan rengi */
+    color: white; /* Metin rengi */
+    margin: 5% auto; /* Dikey hizalamayı ayarla */
+    padding: 20px;
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    width: 80%; /* Modalın genişliğini ayarla */
+}
+
+/* Kapat düğmesinin stilini düzenle */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+}
+
+/* Modal içindeki input alanlarının stilini düzenle */
+#post-form input[type="text"],
+#post-form input[type="file"],
+#post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Modal içindeki Gönder düğmesinin stilini düzenle */
+#post-form button[type="submit"] {
+    background-color: #fff;
+    color: #1DA1F2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#post-form button[type="submit"]:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+#profile-modal button {
+    padding: 8px 16px; /* Yatay ve dikey boşluklar */
+    background-color: transparent; /* Arka plan rengi */
+    border-radius: 20px; /* Yuvarlatılmış köşeler */
+    font-size: 14px; /* Metin boyutu */
+    margin-bottom: 5px;
+    cursor: pointer; /* İmleç türü */
+    transition: background-color 0.3s ease; /* Arka plan rengi animasyonu */
+    border: dashed 0.5px;
+    border-color: gray;
+    color: #fff; /* Metin rengi */
+    width: 100%;
+}
+
+#profile-modal button:hover {
+    background-color: gray; /* Hover rengi */
+}
+
+#profile-modal button[type="submit"] {
+    background-color: #fff;
+    color: #1DA1F2;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px; /* Yatay ve dikey boşluklar */
+    cursor: pointer;
+}
+
+#profile-modal button[type="submit"]:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+#profile-form label {
+    color: white; /* Metin rengi */
+    margin-bottom: 5px;
+    display: block;
+}
+
+#profile-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: dotted;
+    color: white;
+}
+
